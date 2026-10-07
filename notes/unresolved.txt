@@ -1,0 +1,10 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+CoinJamTask | boxing.so
+SoundOGG::IsOGGPlaying(SoundOGG*) | boxing.so
+SoundOGG::PlayOGG(char*, unsigned short, int) | boxing.so
+SoundOGG::PauseOGG(SoundOGG*, bool) | boxing.so
+MeritInput::InputManager::JoystickGetButtonLeft() const | boxing.so
+MeritInput::InputManager::JoystickGetButtonRight() const | boxing.so
