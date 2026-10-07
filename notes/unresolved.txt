@@ -4,7 +4,6 @@
 # symbol | needed by
 CoinJamTask | boxing.so
 SoundOGG::IsOGGPlaying(SoundOGG*) | boxing.so
-SoundOGG::PlayOGG(char*, unsigned short, int) | boxing.so
 SoundOGG::PauseOGG(SoundOGG*, bool) | boxing.so
 MeritInput::InputManager::JoystickGetButtonLeft() const | boxing.so
 MeritInput::InputManager::JoystickGetButtonRight() const | boxing.so
